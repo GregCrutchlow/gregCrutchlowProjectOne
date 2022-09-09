@@ -1,0 +1,83 @@
+@use "variables" as *;
+
+/* Fonts: font-family: 'Barlow', sans-serif;
+            font-family: 'Josefin Sans', sans-serif; */
+
+@font-face {
+    font-family: "Josefin Sans";
+    src: url(../../fonts/Josefin_Sans/JosefinSans-VariableFont_wght.ttf), url(../../fonts/Josefin_Sans/static/JosefinSans-Regular.ttf);
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: "Josefin Sans";
+    src: url(../../fonts/Josefin_Sans/static/JosefinSans-Bold.ttf), url(../../fonts/Josefin_Sans/JosefinSans-Italic-VariableFont_wght.ttf);
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: "Barlow";
+    src: url(../../fonts/Barlow/Barlow-Regular.ttf);
+    font-weight: normal;
+}
+
+html {
+    font-size: 125%;
+}
+
+body {
+    font-family: $bodyFont;
+    font-size: 1rem;
+    font-weight: normal;
+    color: $white;
+}
+
+h2, h3, h4 {
+    font-family: $headingFont;
+    font-weight: normal;
+    color: $white;
+    margin: 0;
+}
+
+h1 {
+    font-family: $headerHeading;
+    font-weight: bold;
+    font-size: 3.45rem;
+}
+
+h2 {
+    font-size: 2.25rem;
+    line-height: 4.99rem;
+}
+
+h3 {
+    font-size: 2rem;
+    line-height: 2.9rem;
+    letter-spacing: 0.065rem;
+}
+
+h4 {
+    font-size: 1.25rem;
+    line-height: 2.9rem;
+    letter-spacing: 0.04rem;
+}
+
+p {
+    line-height: 1.4rem;
+}
+
+ul, li, a {
+    padding: 0;
+    margin: 0;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: $white;
+    cursor: pointer;
+    transition: 0.3s;
+}

@@ -1,0 +1,28 @@
+@use "variables" as *;
+
+.wrapper {
+    max-width: 1200px;
+    width: 90%;
+    margin: 0 auto;
+}
+
+button {
+    color: $black;
+    background-color: $tertiaryColour;
+    padding: 30px 15px; // to be determined for padding
+    border: none;
+    font-size: 1.12rem;
+    font-weight: normal;
+    line-height: 2.08rem;
+    text-align: center;
+    cursor: pointer;
+    transition: 0.3s;
+    &:hover {
+        background-color: $primaryColour;
+        color: $white;
+    }
+    &:focus {
+        background-color: $primaryColour;
+        color: $white;
+    }
+}
