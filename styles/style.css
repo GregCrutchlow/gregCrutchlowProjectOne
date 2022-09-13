@@ -347,6 +347,25 @@ a {
   transition: 0.3s;
 }
 
+.hidden {
+  display: none;
+}
+
+.navBar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.navBar li {
+  padding-left: 20px;
+}
+.navBar:hover {
+  border-bottom: 3px #ffd300 solid;
+}
+.navBar:focus {
+  border-bottom: 3px #ffd300 solid;
+}
+
 header h1 {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -362,4 +381,6 @@ header h1 span {
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
+  line-height: 0%;
+  padding: 15px 10px;
 }

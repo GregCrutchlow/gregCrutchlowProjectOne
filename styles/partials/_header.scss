@@ -1,5 +1,24 @@
 @use "variables" as *;
 
+.hidden {
+    display: none;
+
+}
+
+.navBar {
+    display: flex;
+    li {
+        padding-left: 20px;
+
+    }
+    &:hover {
+        border-bottom: 3px $tertiaryColour solid;
+    }
+    &:focus {
+        border-bottom: 3px $tertiaryColour solid;
+    }
+}
+
 header {
     h1 {
         display: flex;
@@ -8,6 +27,8 @@ header {
             background-color: $white;
             color: $black;
             width: fit-content;
+            line-height: 0%;
+            padding: 15px 10px;
         }
     }
 }
