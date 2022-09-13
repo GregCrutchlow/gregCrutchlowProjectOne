@@ -235,6 +235,10 @@ html {
   overflow: hidden;
 }
 
+body {
+  background-color: #171b0e;
+}
+
 .wrapper {
   max-width: 1200px;
   width: 90%;
@@ -341,4 +345,21 @@ a {
   cursor: pointer;
   -webkit-transition: 0.3s;
   transition: 0.3s;
+}
+
+header h1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+header h1 span {
+  background-color: #fff;
+  color: #0f0f0f;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
 }
