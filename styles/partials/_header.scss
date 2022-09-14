@@ -9,14 +9,19 @@
     display: flex;
     li {
         padding-left: 20px;
-
-    }
-    &:hover {
+        a {
+            width: max-content;
+        }
+        &:hover {
         border-bottom: 3px $tertiaryColour solid;
+        width: max-content;
     }
     &:focus {
         border-bottom: 3px $tertiaryColour solid;
+        width: max-content;
     }
+    }
+    
 }
 
 header {
@@ -28,7 +33,8 @@ header {
             color: $black;
             width: fit-content;
             line-height: 0%;
-            padding: 15px 10px;
+            padding: 15px 10px 0;
+            margin-bottom: 10px;
         }
     }
 }

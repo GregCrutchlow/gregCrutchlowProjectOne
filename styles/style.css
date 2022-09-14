@@ -359,11 +359,22 @@ a {
 .navBar li {
   padding-left: 20px;
 }
-.navBar:hover {
-  border-bottom: 3px #ffd300 solid;
+.navBar li a {
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
 }
-.navBar:focus {
+.navBar li:hover {
   border-bottom: 3px #ffd300 solid;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+}
+.navBar li:focus {
+  border-bottom: 3px #ffd300 solid;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
 }
 
 header h1 {
@@ -382,5 +393,6 @@ header h1 span {
   width: -moz-fit-content;
   width: fit-content;
   line-height: 0%;
-  padding: 15px 10px;
+  padding: 15px 10px 0;
+  margin-bottom: 10px;
 }
