@@ -1,0 +1,60 @@
+@use "variables" as *;
+@use "baseStyles";
+
+.sectionOne {
+  background-color: $primaryColour;
+  padding-top: 250px;
+  ul {
+    display: flex;
+    li {
+      display: flex;
+      flex-direction: row;
+      margin: 30px;
+      .infoContent {
+        padding-left: 25px;
+      }
+    }
+    .iconInfoContainer {
+      display: flex;
+      background-color: $tertiaryColour;
+      border-radius: 50%;
+      width: 2.5rem;
+      height: 2.5rem;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+  .bottomList {
+    padding-bottom: 150px;
+  }
+}
+
+.sectionTwo {
+  display: flex;
+  flex-direction: column;
+  .articleContents {
+  display: flex;
+  flex-direction: column;
+  padding: 75px;
+  }
+  .articleOne {
+    display: flex;
+    align-items: flex-start;
+    .articleImg {
+      top: 100;
+      box-shadow: 15px 15px $tertiaryColour;
+    }
+  }
+  .articleTwo {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: flex-end;
+    .articleImg {
+      box-shadow: -15px 15px $tertiaryColour;
+    }
+    .articleContents {
+      align-items: flex-end;
+      justify-content: center;
+    }
+  }
+}

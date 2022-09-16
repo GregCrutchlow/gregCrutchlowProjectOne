@@ -10,17 +10,20 @@ body {
     margin: 0 auto;
 }
 
-button {
+.button {
     color: $black;
     background-color: $tertiaryColour;
-    padding: 30px 15px; // to be determined for padding
+    padding: 5px 10px; // to be determined for padding
     border: none;
+    font-family: 'Josefin Sans';
     font-size: 1.12rem;
     font-weight: normal;
-    line-height: 2.08rem;
+    text-transform: uppercase;
+    line-height: 1.5rem;
     text-align: center;
+    width: fit-content;
     cursor: pointer;
-    transition: 0.3s;
+    transition: 0.1s;
     &:hover {
         background-color: $primaryColour;
         color: $white;

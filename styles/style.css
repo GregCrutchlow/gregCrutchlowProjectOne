@@ -245,24 +245,29 @@ body {
   margin: 0 auto;
 }
 
-button {
+.button {
   color: #0f0f0f;
   background-color: #ffd300;
-  padding: 30px 15px;
+  padding: 5px 10px;
   border: none;
+  font-family: "Josefin Sans";
   font-size: 1.12rem;
   font-weight: normal;
-  line-height: 2.08rem;
+  text-transform: uppercase;
+  line-height: 1.5rem;
   text-align: center;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
   cursor: pointer;
-  -webkit-transition: 0.3s;
-  transition: 0.3s;
+  -webkit-transition: 0.1s;
+  transition: 0.1s;
 }
-button:hover {
+.button:hover {
   background-color: #2b331b;
   color: #fff;
 }
-button:focus {
+.button:focus {
   background-color: #2b331b;
   color: #fff;
 }
@@ -311,7 +316,7 @@ h1 {
 
 h2 {
   font-size: 2.25rem;
-  line-height: 4.99rem;
+  line-height: 2.8rem;
 }
 
 h3 {
@@ -372,31 +377,137 @@ header h1 span {
   padding: 15px 10px 0;
   margin-bottom: 15px;
 }
-.navBar {
+header .heroImage {
+  position: absolute;
+  right: 0;
+  bottom: -100px;
+  max-width: 100%;
+  height: auto;
+}
+header .navBar {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin-top: 2rem;
+  padding-top: 2rem;
 }
-.navBar li {
-  padding-left: 50px;
+header .navBar li {
+  padding: 50px 20px 10px;
 }
-.navBar li a {
+header .navBar li a {
   font-family: "Josefin Sans";
   letter-spacing: 1px;
   width: -webkit-max-content;
   width: -moz-max-content;
   width: max-content;
+  padding: 20px;
 }
-.navBar li:hover {
-  border-bottom: 3px #ffd300 solid;
+header .navBar li a:hover {
+  border-bottom: solid #ffd300;
   width: -webkit-max-content;
   width: -moz-max-content;
   width: max-content;
 }
-.navBar li:focus {
-  border-bottom: 3px #ffd300 solid;
+header .navBar li a:focus {
+  border-bottom: solid #ffd300;
   width: -webkit-max-content;
   width: -moz-max-content;
   width: max-content;
+}
+
+.sectionOne {
+  background-color: #2b331b;
+  padding-top: 250px;
+}
+.sectionOne ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.sectionOne ul li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  margin: 30px;
+}
+.sectionOne ul li .infoContent {
+  padding-left: 25px;
+}
+.sectionOne ul .iconInfoContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: #ffd300;
+  border-radius: 50%;
+  width: 2.5rem;
+  height: 2.5rem;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.sectionOne .bottomList {
+  padding-bottom: 150px;
+}
+
+.sectionTwo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.sectionTwo .articleContents {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 75px;
+}
+.sectionTwo .articleOne {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+.sectionTwo .articleOne .articleImg {
+  top: 100;
+  -webkit-box-shadow: 15px 15px #ffd300;
+          box-shadow: 15px 15px #ffd300;
+}
+.sectionTwo .articleTwo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+.sectionTwo .articleTwo .articleImg {
+  -webkit-box-shadow: -15px 15px #ffd300;
+          box-shadow: -15px 15px #ffd300;
+}
+.sectionTwo .articleTwo .articleContents {
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }

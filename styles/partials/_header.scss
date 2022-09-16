@@ -17,27 +17,33 @@ header {
         }
     }
     .heroImage {
-        
+        position: absolute;
+        right: 0;
+        bottom: -100px;
+        max-width: 100%;
+        height: auto;
     }
-}
-.navBar {
-    display: flex;
-    margin-top: 2rem;
-    li {
-        padding-left: 50px;
-        a {
-            font-family: 'Josefin Sans';
-            letter-spacing: 1px;
-            width: max-content;
-        }
-        &:hover {
-        border-bottom: 3px $tertiaryColour solid;
-        width: max-content;
-        }
-        &:focus {
-            border-bottom: 3px $tertiaryColour solid;
-            width: max-content;
-        }
+    .navBar {
+        display: flex;
+        padding-top: 2rem;
+            li {
+            padding: 50px 20px 10px;
+                a {
+                    font-family: 'Josefin Sans';
+                    letter-spacing: 1px;
+                    width: max-content;
+                    padding: 20px;
+                    &:hover {
+                    border-bottom: solid $tertiaryColour ;
+                    width: max-content;
+                    }
+                    &:focus {
+                        border-bottom: solid $tertiaryColour ;
+                        width: max-content;
+                    }
+                }
+                
+            }
     }
-    
+
 }
