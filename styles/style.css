@@ -377,6 +377,11 @@ a {
   width: max-content;
 }
 
+header {
+  background-image: url(../../assets/banner.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
 header h1 {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -393,5 +398,5 @@ header h1 span {
   width: -moz-fit-content;
   width: fit-content;
   padding: 15px 10px 0;
-  margin-bottom: 10px;
+  margin-bottom: 15px;
 }
