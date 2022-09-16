@@ -1,33 +1,10 @@
 @use "variables" as *;
 
-.hidden {
-    display: none;
-
-}
-
-.navBar {
-    display: flex;
-    li {
-        padding-left: 20px;
-        a {
-            width: max-content;
-        }
-        &:hover {
-        border-bottom: 3px $tertiaryColour solid;
-        width: max-content;
-    }
-    &:focus {
-        border-bottom: 3px $tertiaryColour solid;
-        width: max-content;
-    }
-    }
-    
-}
-
 header {
-    background-image: url(../../assets/banner.jpg);
+    background-image: url(../../assets/home-header.jpg);
     background-size: cover;
     background-repeat: no-repeat;
+    height: 95vh;
     h1 {
         display: flex;
         flex-direction: column;
@@ -39,4 +16,28 @@ header {
             margin-bottom: 15px;
         }
     }
+    .heroImage {
+        
+    }
+}
+.navBar {
+    display: flex;
+    margin-top: 2rem;
+    li {
+        padding-left: 50px;
+        a {
+            font-family: 'Josefin Sans';
+            letter-spacing: 1px;
+            width: max-content;
+        }
+        &:hover {
+        border-bottom: 3px $tertiaryColour solid;
+        width: max-content;
+        }
+        &:focus {
+            border-bottom: 3px $tertiaryColour solid;
+            width: max-content;
+        }
+    }
+    
 }
