@@ -40,9 +40,13 @@
   .articleOne {
     display: flex;
     align-items: flex-start;
-    .articleImg {
-      top: 100;
-      box-shadow: 15px 15px $tertiaryColour;
+
+    .imageArticle {
+      width: 150%;
+      top:-65px;
+      .articleImg {
+        box-shadow: 15px 15px $tertiaryColour;
+      }
     }
   }
   .articleTwo {
@@ -54,7 +58,46 @@
     }
     .articleContents {
       align-items: flex-end;
-      justify-content: center;
     }
+  }
+}
+
+.sectionThree {
+  background-color: $primaryColour;
+  display: flex;
+  .promotionOffer {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    padding: 150px 0px 100px 0px;
+    .btnBlack {
+      margin-top: 30px;
+      padding-top: 10px;
+      line-height: 2rem;
+      background-color: $black;
+      color: $white;
+      &:hover {
+        background-color: $tertiaryColour;
+        color: $black;
+      }
+    }
+  }
+}
+
+.sectionFour {
+  background-image: url(../../assets/banner.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 63vh;
+}
+
+.sectionFive {
+  padding-top: 150px;
+  display: flex;
+  flex-direction: column;
+  .restaurant {
+    box-shadow: -15px 15px $tertiaryColour;
+
   }
 }

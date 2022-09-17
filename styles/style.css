@@ -482,8 +482,11 @@ header .navBar li a:focus {
       -ms-flex-align: start;
           align-items: flex-start;
 }
-.sectionTwo .articleOne .articleImg {
-  top: 100;
+.sectionTwo .articleOne .imageArticle {
+  width: 150%;
+  top: -65px;
+}
+.sectionTwo .articleOne .imageArticle .articleImg {
   -webkit-box-shadow: 15px 15px #ffd300;
           box-shadow: 15px 15px #ffd300;
 }
@@ -507,7 +510,58 @@ header .navBar li a:focus {
   -webkit-box-align: end;
       -ms-flex-align: end;
           align-items: flex-end;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+}
+
+.sectionThree {
+  background-color: #2b331b;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.sectionThree .promotionOffer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 150px 0px 100px 0px;
+}
+.sectionThree .promotionOffer .btnBlack {
+  margin-top: 30px;
+  padding-top: 10px;
+  line-height: 2rem;
+  background-color: #0f0f0f;
+  color: #fff;
+}
+.sectionThree .promotionOffer .btnBlack:hover {
+  background-color: #ffd300;
+  color: #0f0f0f;
+}
+
+.sectionFour {
+  background-image: url(../../assets/banner.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 63vh;
+}
+
+.sectionFive {
+  padding-top: 150px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.sectionFive .restaurant {
+  -webkit-box-shadow: -15px 15px #ffd300;
+          box-shadow: -15px 15px #ffd300;
 }
