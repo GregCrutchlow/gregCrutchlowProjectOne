@@ -422,10 +422,9 @@ header .navBar {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding-top: 2rem;
 }
 header .navBar li {
-  padding: 50px 20px 10px;
+  padding: 50px 20px 10px 0px;
 }
 header .navBar li a {
   font-family: "Josefin Sans";
@@ -433,7 +432,8 @@ header .navBar li a {
   width: -webkit-max-content;
   width: -moz-max-content;
   width: max-content;
-  padding: 20px;
+  margin: 20px 20px 20px 0px;
+  padding-bottom: 5px;
 }
 header .navBar li a:hover {
   border-bottom: solid #ffd300;
