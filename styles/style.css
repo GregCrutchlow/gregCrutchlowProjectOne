@@ -272,6 +272,40 @@ body {
   color: #fff;
 }
 
+.btnYellow {
+  background-color: #ffd300;
+  color: #0f0f0f;
+  cursor: pointer;
+  -webkit-transition: 0.1s;
+  transition: 0.1s;
+  padding: 10px 25px 5px;
+}
+.btnYellow:hover {
+  background-color: #2b331b;
+  color: #fff;
+}
+.btnYellow:focus {
+  background-color: #2b331b;
+  color: #fff;
+}
+
+.btnBlack {
+  background-color: #0f0f0f;
+  color: #fff;
+  cursor: pointer;
+  -webkit-transition: 0.1s;
+  transition: 0.1s;
+  padding: 10px 25px 5px;
+}
+.btnBlack:hover {
+  background-color: #ffd300;
+  color: #0f0f0f;
+}
+.btnBlack:focus {
+  background-color: #ffd300;
+  color: #0f0f0f;
+}
+
 /* Fonts: font-family: 'Barlow', sans-serif;
             font-family: 'Josefin Sans', sans-serif; */
 @font-face {
@@ -414,6 +448,22 @@ header .navBar li a:focus {
   width: max-content;
 }
 
+.blog {
+  background-image: url(../../assets/blog-header.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 75vh;
+}
+.blog .heroImage {
+  position: absolute;
+  right: 0;
+  bottom: -300px;
+  width: 60%;
+  height: auto;
+  -webkit-box-shadow: -20px 20px #ffd300;
+          box-shadow: -20px 20px #ffd300;
+}
+
 .sectionOne {
   background-color: #2b331b;
   padding-top: 250px;
@@ -484,7 +534,7 @@ header .navBar li a:focus {
 }
 .sectionTwo .articleOne .imageArticle {
   width: 150%;
-  top: -65px;
+  margin-top: -20px;
 }
 .sectionTwo .articleOne .imageArticle .articleImg {
   -webkit-box-shadow: 15px 15px #ffd300;
@@ -505,6 +555,7 @@ header .navBar li a:focus {
 .sectionTwo .articleTwo .articleImg {
   -webkit-box-shadow: -15px 15px #ffd300;
           box-shadow: -15px 15px #ffd300;
+  margin-bottom: -75px;
 }
 .sectionTwo .articleTwo .articleContents {
   -webkit-box-align: end;
@@ -532,17 +583,6 @@ header .navBar li a:focus {
           align-items: center;
   padding: 150px 0px 100px 0px;
 }
-.sectionThree .promotionOffer .btnBlack {
-  margin-top: 30px;
-  padding-top: 10px;
-  line-height: 2rem;
-  background-color: #0f0f0f;
-  color: #fff;
-}
-.sectionThree .promotionOffer .btnBlack:hover {
-  background-color: #ffd300;
-  color: #0f0f0f;
-}
 
 .sectionFour {
   background-image: url(../../assets/banner.jpg);
@@ -556,12 +596,93 @@ header .navBar li a:focus {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  background-color: #2b331b;
+  padding-bottom: 200px;
+}
+.sectionFive .spaces {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.sectionFive .spaces .restaurant {
+  -webkit-box-shadow: -15px 15px #ffd300;
+          box-shadow: -15px 15px #ffd300;
+  max-width: 100%;
+  height: 375px;
+}
+.sectionFive .spacesArticle {
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  padding-left: 250px;
+}
+
+.sectionSix {
+  padding: 100px;
+}
+.sectionSix ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.sectionSix ul .gallery {
+  max-width: 100%;
+  height: auto;
+}
+
+.blogSection {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.employment {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
 }
-.sectionFive .restaurant {
-  -webkit-box-shadow: -15px 15px #ffd300;
-          box-shadow: -15px 15px #ffd300;
+.employment img {
+  margin-top: -250px;
+  width: 60vw;
+  height: auto;
+  -webkit-box-shadow: -20px 20px #ffd300;
+          box-shadow: -20px 20px #ffd300;
+}
+.employment .blogPost {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #0f0f0f;
+}
+footer p {
+  margin: 5px 0;
 }

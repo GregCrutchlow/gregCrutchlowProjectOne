@@ -33,3 +33,35 @@ body {
         color: $white;
     }
 }
+
+.btnYellow {
+    background-color: $tertiaryColour;
+    color: $black;
+    cursor: pointer;
+    transition: 0.1s;
+    padding: 10px 25px 5px;
+    &:hover {
+        background-color: $primaryColour;
+        color: $white;
+    }
+    &:focus {
+        background-color: $primaryColour;
+        color: $white;
+    }
+}
+
+.btnBlack {
+    background-color: $black;
+    color: $white;
+    cursor: pointer;
+    transition: 0.1s;
+    padding: 10px 25px 5px;
+    &:hover {
+        background-color: $tertiaryColour;
+        color: $black;
+    }
+    &:focus {
+        background-color: $tertiaryColour;
+        color: $black;
+    }
+}

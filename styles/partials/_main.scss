@@ -43,18 +43,20 @@
 
     .imageArticle {
       width: 150%;
-      top:-65px;
+      margin-top: -20px;
       .articleImg {
         box-shadow: 15px 15px $tertiaryColour;
       }
     }
   }
   .articleTwo {
+    
     display: flex;
     flex-direction: row-reverse;
     align-items: flex-end;
     .articleImg {
       box-shadow: -15px 15px $tertiaryColour;
+      margin-bottom: -75px;
     }
     .articleContents {
       align-items: flex-end;
@@ -71,17 +73,6 @@
     text-align: center;
     align-items: center;
     padding: 150px 0px 100px 0px;
-    .btnBlack {
-      margin-top: 30px;
-      padding-top: 10px;
-      line-height: 2rem;
-      background-color: $black;
-      color: $white;
-      &:hover {
-        background-color: $tertiaryColour;
-        color: $black;
-      }
-    }
   }
 }
 
@@ -95,9 +86,51 @@
 .sectionFive {
   padding-top: 150px;
   display: flex;
-  flex-direction: column;
-  .restaurant {
-    box-shadow: -15px 15px $tertiaryColour;
+  background-color: $primaryColour;
+  padding-bottom: 200px;
+  .spaces {
+    display: flex;
+    .restaurant {
+      box-shadow: -15px 15px $tertiaryColour;
+      max-width: 100%;
+      height: 375px;
+    }
+  }
+    .spacesArticle {
+      justify-content: flex-end;
+      padding-left: 250px;
+    }
+  }
 
+.sectionSix {
+  padding: 100px;
+  ul {
+    display: flex;
+    justify-content: space-between;
+    .gallery {
+      max-width: 100%;
+      height: auto;
+    }
+  }
+} 
+
+.blogSection {
+  display: flex;
+}
+
+.employment {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  img {
+    margin-top: -250px;
+    width: 60vw;
+    height: auto;
+    box-shadow: -20px 20px $tertiaryColour;
+  }
+  .blogPost {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
   }
 }

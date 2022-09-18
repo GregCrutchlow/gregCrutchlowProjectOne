@@ -47,3 +47,18 @@ header {
     }
 
 }
+
+.blog {
+    background-image: url(../../assets/blog-header.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 75vh;
+    .heroImage {
+        position: absolute;
+        right: 0;
+        bottom: -300px;
+        width: 60%;
+        height: auto;
+        box-shadow: -20px 20px $tertiaryColour;
+    }
+}
