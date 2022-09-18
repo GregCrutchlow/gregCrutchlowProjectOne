@@ -500,6 +500,11 @@ header .navBar li a:focus {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+.sectionOne ul .iconInfoContainer:hover {
+  scale: 1.15;
 }
 .sectionOne .bottomList {
   padding-bottom: 150px;
@@ -561,6 +566,7 @@ header .navBar li a:focus {
   -webkit-box-align: end;
       -ms-flex-align: end;
           align-items: flex-end;
+  text-align: right;
 }
 
 .sectionThree {
@@ -685,4 +691,11 @@ footer {
 }
 footer p {
   margin: 5px 0;
+}
+footer p a {
+  font-weight: normal;
+  cursor: pointer;
+}
+footer p a:hover {
+  border-bottom: solid #ffd300;
 }

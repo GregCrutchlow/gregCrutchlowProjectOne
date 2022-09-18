@@ -7,5 +7,12 @@ footer {
   background-color: $black;
   p {
     margin: 5px 0;
+    a {
+      font-weight: normal;
+      cursor: pointer;
+      &:hover {
+        border-bottom: solid $tertiaryColour;
+      }
+    }
   }
 }
