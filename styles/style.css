@@ -245,6 +245,12 @@ body {
   margin: 0 auto;
 }
 
+.blogWrapper {
+  max-width: 1200px;
+  width: 61%;
+  margin: 0 0 0 auto;
+}
+
 .button {
   color: #0f0f0f;
   background-color: #ffd300;
@@ -639,10 +645,14 @@ header .navBar li a:focus {
   height: auto;
 }
 
-.blogSection {
+.twoWrappers {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
 }
 
 .employment {
@@ -653,9 +663,6 @@ header .navBar li a:focus {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: flex-end;
 }
 .employment img {
   margin-top: -250px;
@@ -675,6 +682,31 @@ header .navBar li a:focus {
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
+  padding: 4rem 3rem;
+}
+
+.comments {
+  padding: 0 50px;
+}
+.comments .commentPost {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.comments .commentPost Img {
+  width: 100%;
+}
+.comments .commentPost .comment {
+  margin: 0 0 40px 20px;
+}
+
+.commentForm {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.commentForm fieldset {
+  border: none;
 }
 
 footer {

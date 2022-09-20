@@ -10,6 +10,12 @@ body {
     margin: 0 auto;
 }
 
+.blogWrapper {
+    max-width: 1200px;
+    width: 61%;
+    margin: 0 0 0 auto;
+}
+
 .button {
     color: $black;
     background-color: $tertiaryColour;

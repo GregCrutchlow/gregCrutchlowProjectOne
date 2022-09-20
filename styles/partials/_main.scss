@@ -118,15 +118,15 @@
     }
   }
 } 
-
-.blogSection {
+.twoWrappers {
   display: flex;
+  flex-direction: row-reverse;
 }
+
 
 .employment {
   display: flex;
   flex-direction: column;
-  align-items: flex-end;
   img {
     margin-top: -250px;
     width: 60vw;
@@ -137,5 +137,26 @@
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+    padding: 4rem 3rem;
+  }
+}
+
+.comments {
+  padding: 0 50px;
+  .commentPost {
+    display: flex;
+    Img {
+      width: 100%;
+    }
+    .comment {
+      margin: 0 0 40px 20px;
+    }
+  }
+}
+
+.commentForm {
+  display: flex;
+  fieldset {
+    border: none;
   }
 }
