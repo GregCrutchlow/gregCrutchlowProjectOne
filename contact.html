@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,11 +8,62 @@
     <link rel="stylesheet" href="./styles/style.css">
     <title>The Mall Restaurant</title>
 </head>
+
 <body>
-    <!-- TODO: import nav -->
-    <!-- TODO: import header -->
-    <!-- TODO: build form -->
-    <!-- TODO: build contact info -->
-    <!-- TODO: import footer -->
+    <header class="contact">
+        <div class="wrapper">
+            <nav>
+                <ul class="navBar">
+                    <li><a href="./index.html">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="./blog.html">Blog</a></li>
+                    <li><a href="./contact.html">Contact</a></li>
+                </ul> <!-- navBar end -->
+            </nav>
+            <h1>Get In Touch</h1>
+        </div>
+    </header>
+    <main class="mainContact">
+        <div class="wrapper">
+            <div class="contactFlex">
+                <section class="formContainer">
+                    <form action="#">
+                        <fieldset>
+                            <div class="nameEmail">
+                                <label for="name">name</label>
+                                <input id="name" type="text" placeholder="Name" required>
+                                <label for="email">email</label>
+                                <input id="email" type="email" placeholder="Email address" required>
+                            </div>
+                            <textarea name="message" id="message" cols="75" rows="10" placeholder="Message"></textarea>
+                            <button class="button btnYellow btnForm" type="submit">Submit</button>
+                        </fieldset>
+                    </form>
+                </section>
+                <aside>
+                    <section class="contactInformation">
+                        <div class="socialMedia">
+                            <ul class="socialMediaLinks">
+                                <li><a href="#"><img src="./assets/icons/facebook.png" alt="facebook"></a></li>
+                                <li><a href="#"><img src="./assets/icons/instagram.png" alt="instagram"></a></li>
+                                <li><a href="#"><img src="./assets/icons/twitter.png" alt="twitter"></a></li>
+                                <li><a href="#"><img src="./assets/icons/whatsapp.png" alt="whatsapp"></a></li>
+                            </ul>
+                        </div>
+                        <div class="contactInfo">
+                            <p class="email">info@email.com</p>
+                            <p>123-456-7890 <br>123 Queen Street West, Unit 10 <br>Toronto, Ontario <br>M5V2D5</p>
+                        </div>
+                    </section>
+
+                </aside>
+            </div>
+
+        </div>
+    </main>
+    <footer>
+        <p>Copyright © 2019 <a href="https://junocollege.com/">Juno College</a></p>
+    </footer>
 </body>
+
 </html>

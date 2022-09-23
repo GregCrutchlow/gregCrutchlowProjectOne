@@ -36,33 +36,42 @@
 .sectionTwo {
   display: flex;
   flex-direction: column;
+  gap: 2rem;
   .articleContents {
   display: flex;
   flex-direction: column;
-  padding: 75px;
+  justify-content: center;
+  vertical-align: middle;
+  padding: 5% 6%;
   }
   .articleOne {
     display: flex;
     align-items: flex-start;
-
     .imageArticle {
       width: 150%;
       margin-top: -20px;
       .articleImg {
         box-shadow: 15px 15px $tertiaryColour;
+        width: 90%;
       }
     }
   }
   .articleTwo {
-    
     display: flex;
     flex-direction: row-reverse;
     align-items: flex-end;
-    .articleImg {
-      box-shadow: -15px 15px $tertiaryColour;
-      margin-bottom: -75px;
+    .imageArticle {
+      width: 150%;
+      .articleImg {
+        box-shadow: -15px 15px $tertiaryColour;
+        margin-bottom: -75px;
+        width:90%;
+        float: right;
+      }
     }
     .articleContents {
+      display: flex;
+      vertical-align: middle;
       align-items: flex-end;
       text-align: right;
     }
@@ -89,10 +98,10 @@
 }
 
 .sectionFive {
-  padding-top: 150px;
+  padding-top: 100px;
   display: flex;
   background-color: $primaryColour;
-  padding-bottom: 200px;
+  padding-bottom: 100px;
   .spaces {
     display: flex;
     .restaurant {
@@ -115,48 +124,10 @@
     .gallery {
       max-width: 100%;
       height: auto;
+      .galleryImg {
+        min-width: 120%;
+      }
     }
   }
 } 
-.twoWrappers {
-  display: flex;
-  flex-direction: row-reverse;
-}
 
-
-.employment {
-  display: flex;
-  flex-direction: column;
-  img {
-    margin-top: -250px;
-    width: 60vw;
-    height: auto;
-    box-shadow: -20px 20px $tertiaryColour;
-  }
-  .blogPost {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    padding: 4rem 3rem;
-  }
-}
-
-.comments {
-  padding: 0 50px;
-  .commentPost {
-    display: flex;
-    Img {
-      width: 100%;
-    }
-    .comment {
-      margin: 0 0 40px 20px;
-    }
-  }
-}
-
-.commentForm {
-  display: flex;
-  fieldset {
-    border: none;
-  }
-}

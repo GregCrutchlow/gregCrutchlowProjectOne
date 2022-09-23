@@ -62,3 +62,10 @@ header {
         box-shadow: -20px 20px $tertiaryColour;
     }
 }
+
+.contact {
+    background-image: url(../../assets/contact-header.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 72vh;
+}

@@ -1,0 +1,73 @@
+@use "variables" as *;
+
+.mainContact {
+  background-color: $primaryColour;
+}
+
+.contactFlex {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  margin: 5rem 0;
+  background-color: $primaryColour;
+}
+
+.formContainer {
+  form {
+    margin-top: -270px;
+    padding: 2rem;
+    width: fit-content;
+    max-width: 850px;
+    min-width: 300px;
+    background-color: $secondaryColour;
+    box-shadow: 20px 20px $tertiaryColour;
+    fieldset {
+      border: none;
+      .nameEmail {
+        display: flex;
+        width: auto;
+        padding-bottom: 20px ;
+        border: none;
+        label {
+          display: none;
+        }
+        input {
+          display: flex;
+          justify-content: space-between;
+          outline: none;
+          border: none;
+          border-bottom: 2px solid $tertiaryColour;
+          background-color: transparent;
+          color: $white;
+          padding: 0.5rem 0 0.5rem 1rem;
+          width: 100%;
+        }
+      }
+      textarea {
+          border: none;
+          background-color: transparent;
+          color: $white;
+          border: 2px solid $tertiaryColour;
+          resize: none;
+          width: 100%;
+          padding: 1rem;
+        }
+      .btnForm{
+        margin-top: 40px;
+        width: 100%;
+      }
+    }
+}
+}
+
+
+.contactInformation {
+  display: flex;
+  flex-direction: column;
+  .socialMediaLinks {
+    display: flex;
+    }
+    li {
+      padding-right: 20px;
+  }
+}

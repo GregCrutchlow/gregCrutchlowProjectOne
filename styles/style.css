@@ -236,7 +236,7 @@ html {
 }
 
 body {
-  background-color: #171b0e;
+  background-color: #2b331b;
 }
 
 .wrapper {
@@ -371,6 +371,13 @@ h4 {
   letter-spacing: 0.04rem;
 }
 
+h5 {
+  font-weight: bold;
+  font-size: 1.15rem;
+  line-height: 0.2rem;
+  letter-spacing: 0.04rem;
+}
+
 p {
   line-height: 1.4rem;
 }
@@ -470,6 +477,13 @@ header .navBar li a:focus {
           box-shadow: -20px 20px #ffd300;
 }
 
+.contact {
+  background-image: url(../../assets/contact-header.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 72vh;
+}
+
 .sectionOne {
   background-color: #2b331b;
   padding-top: 250px;
@@ -524,6 +538,7 @@ header .navBar li a:focus {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  gap: 2rem;
 }
 .sectionTwo .articleContents {
   display: -webkit-box;
@@ -533,7 +548,11 @@ header .navBar li a:focus {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  padding: 75px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  vertical-align: middle;
+  padding: 5% 6%;
 }
 .sectionTwo .articleOne {
   display: -webkit-box;
@@ -550,6 +569,7 @@ header .navBar li a:focus {
 .sectionTwo .articleOne .imageArticle .articleImg {
   -webkit-box-shadow: 15px 15px #ffd300;
           box-shadow: 15px 15px #ffd300;
+  width: 90%;
 }
 .sectionTwo .articleTwo {
   display: -webkit-box;
@@ -563,12 +583,21 @@ header .navBar li a:focus {
       -ms-flex-align: end;
           align-items: flex-end;
 }
-.sectionTwo .articleTwo .articleImg {
+.sectionTwo .articleTwo .imageArticle {
+  width: 150%;
+}
+.sectionTwo .articleTwo .imageArticle .articleImg {
   -webkit-box-shadow: -15px 15px #ffd300;
           box-shadow: -15px 15px #ffd300;
   margin-bottom: -75px;
+  width: 90%;
+  float: right;
 }
 .sectionTwo .articleTwo .articleContents {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  vertical-align: middle;
   -webkit-box-align: end;
       -ms-flex-align: end;
           align-items: flex-end;
@@ -604,12 +633,12 @@ header .navBar li a:focus {
 }
 
 .sectionFive {
-  padding-top: 150px;
+  padding-top: 100px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   background-color: #2b331b;
-  padding-bottom: 200px;
+  padding-bottom: 100px;
 }
 .sectionFive .spaces {
   display: -webkit-box;
@@ -644,6 +673,13 @@ header .navBar li a:focus {
   max-width: 100%;
   height: auto;
 }
+.sectionSix ul .gallery .galleryImg {
+  min-width: 120%;
+}
+
+.mainBlog {
+  background-color: #2b331b;
+}
 
 .twoWrappers {
   display: -webkit-box;
@@ -656,20 +692,16 @@ header .navBar li a:focus {
 }
 
 .employment {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -webkit-box-shadow: -5px 5px 0 5px #ffd300;
+          box-shadow: -5px 5px 0 5px #ffd300;
 }
-.employment img {
+.employment .blogImg {
   margin-top: -250px;
   width: 60vw;
   height: auto;
   -webkit-box-shadow: -20px 20px #ffd300;
           box-shadow: -20px 20px #ffd300;
+  vertical-align: bottom;
 }
 .employment .blogPost {
   display: -webkit-box;
@@ -682,22 +714,42 @@ header .navBar li a:focus {
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
-  padding: 4rem 3rem;
+  padding: 7rem;
+}
+.employment .blogPost h2 {
+  color: #ffd300;
+  text-transform: uppercase;
 }
 
 .comments {
-  padding: 0 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 50px 50px;
 }
-.comments .commentPost {
+.comments h3 {
+  text-transform: uppercase;
+  padding-bottom: 2rem;
+}
+.comments .responses {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
-.comments .commentPost Img {
-  width: 100%;
+.comments .responses .responsesImg {
+  height: auto;
+  max-width: initial;
 }
-.comments .commentPost .comment {
-  margin: 0 0 40px 20px;
+.comments .responses .responsesContent {
+  padding: 0 0 100px 50px;
+}
+.comments .responses .responsesContent h5 {
+  color: #ffd300;
+  margin: 0;
 }
 
 .commentForm {
@@ -707,6 +759,98 @@ header .navBar li a:focus {
 }
 .commentForm fieldset {
   border: none;
+}
+
+.mainContact {
+  background-color: #2b331b;
+}
+
+.contactFlex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 5rem 0;
+  background-color: #2b331b;
+}
+
+.formContainer form {
+  margin-top: -270px;
+  padding: 2rem;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  max-width: 850px;
+  min-width: 300px;
+  background-color: #171b0e;
+  -webkit-box-shadow: 20px 20px #ffd300;
+          box-shadow: 20px 20px #ffd300;
+}
+.formContainer form fieldset {
+  border: none;
+}
+.formContainer form fieldset .nameEmail {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: auto;
+  padding-bottom: 20px;
+  border: none;
+}
+.formContainer form fieldset .nameEmail label {
+  display: none;
+}
+.formContainer form fieldset .nameEmail input {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  outline: none;
+  border: none;
+  border-bottom: 2px solid #ffd300;
+  background-color: transparent;
+  color: #fff;
+  padding: 0.5rem 0 0.5rem 1rem;
+  width: 100%;
+}
+.formContainer form fieldset textarea {
+  border: none;
+  background-color: transparent;
+  color: #fff;
+  border: 2px solid #ffd300;
+  resize: none;
+  width: 100%;
+  padding: 1rem;
+}
+.formContainer form fieldset .btnForm {
+  margin-top: 40px;
+  width: 100%;
+}
+
+.contactInformation {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.contactInformation .socialMediaLinks {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.contactInformation li {
+  padding-right: 20px;
 }
 
 footer {
