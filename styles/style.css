@@ -677,11 +677,7 @@ header .navBar li a:focus {
   min-width: 120%;
 }
 
-.mainBlog {
-  background-color: #2b331b;
-}
-
-.twoWrappers {
+.pageContainer {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -690,75 +686,174 @@ header .navBar li a:focus {
       -ms-flex-direction: row-reverse;
           flex-direction: row-reverse;
 }
-
-.employment {
-  -webkit-box-shadow: -5px 5px 0 5px #ffd300;
-          box-shadow: -5px 5px 0 5px #ffd300;
+.pageContainer .blogContents {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  max-width: 70vw;
+  min-width: 300px;
 }
-.employment .blogImg {
+.pageContainer .blogContents .blogImgContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+.pageContainer .blogContents .blogImgContainer img {
   margin-top: -250px;
-  width: 60vw;
-  height: auto;
+  width: 150%;
   -webkit-box-shadow: -20px 20px #ffd300;
           box-shadow: -20px 20px #ffd300;
-  vertical-align: bottom;
 }
-.employment .blogPost {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
-  padding: 7rem;
+.pageContainer .blogContents .blogContainer {
+  margin-left: -20px;
+  padding: 4.5rem;
+  border-left: 3px solid #ffd300;
+  border-bottom: 3px solid #ffd300;
 }
-.employment .blogPost h2 {
+.pageContainer .blogContents .blogContainer h2 {
+  text-transform: uppercase;
   color: #ffd300;
-  text-transform: uppercase;
 }
-
-.comments {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  padding: 50px 50px;
-}
-.comments h3 {
-  text-transform: uppercase;
-  padding-bottom: 2rem;
-}
-.comments .responses {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-.comments .responses .responsesImg {
+.pageContainer .blogContents .commentAndFormContainer {
+  margin: 0 auto;
   height: auto;
-  max-width: initial;
+  max-width: 70vw;
 }
-.comments .responses .responsesContent {
-  padding: 0 0 100px 50px;
+.pageContainer .blogContents .commentAndFormContainer .commentContainer {
+  padding: 75px;
 }
-.comments .responses .responsesContent h5 {
-  color: #ffd300;
-  margin: 0;
+.pageContainer .blogContents .commentAndFormContainer .commentContainer h2 {
+  text-transform: uppercase;
 }
-
-.commentForm {
+.pageContainer .blogContents .commentAndFormContainer .commentContainer .commentPost {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  padding: 50px 0;
 }
-.commentForm fieldset {
+.pageContainer .blogContents .commentAndFormContainer .commentContainer .commentPost .commentPostContent {
+  padding-left: 40px;
+}
+.pageContainer .blogContents .commentAndFormContainer .commentContainer .commentPost .commentPostContent h5 {
+  color: #ffd300;
+  margin-top: 3px;
+}
+
+.formContainerBlog {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.formContainerBlog form {
+  padding: 2rem;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  max-width: 850px;
+  min-width: 300px;
+  background-color: #2b331b;
+}
+.formContainerBlog form fieldset {
   border: none;
+}
+.formContainerBlog form fieldset .nameEmail {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: auto;
+  padding-bottom: 20px;
+  border: none;
+}
+.formContainerBlog form fieldset .nameEmail .formName {
+  width: 90%;
+}
+.formContainerBlog form fieldset .nameEmail .formEmail {
+  width: 90%;
+}
+.formContainerBlog form fieldset .nameEmail label {
+  display: none;
+}
+.formContainerBlog form fieldset .nameEmail input {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  outline: none;
+  border: none;
+  border-bottom: 2px solid #ffd300;
+  background-color: transparent;
+  color: #fff;
+  padding: 0.5rem 0 0.5rem 1rem;
+  width: 100%;
+}
+.formContainerBlog form fieldset .nameEmail input[type=text] {
+  color: #fff;
+}
+.formContainerBlog form fieldset textarea {
+  border: none;
+  background-color: transparent;
+  color: #fff;
+  border: 2px solid #ffd300;
+  resize: none;
+  width: 100%;
+  padding: 1rem;
+}
+.formContainerBlog form fieldset .btnForm {
+  margin-top: 40px;
+  width: 100%;
+}
+.formContainerBlog form fieldset .btnForm:hover {
+  background-color: #171b0e;
+}
+.formContainerBlog form fieldset .btnForm:focus {
+  background-color: #171b0e;
+}
+
+.recent {
+  margin-top: 150px;
+}
+.recent .recentImg {
+  z-index: 10;
+}
+.recent .recentImg img {
+  width: 70%;
+}
+.recent .recentShadow {
+  width: 61%;
+  margin: -620px 0 0 110px;
+  height: 620px;
+  background-color: #171b0e;
+  z-index: 9;
+}
+.recent .recentContainer {
+  background-color: #171b0e;
+  width: 61%;
+  margin-left: 110px;
+  height: 490px;
+  padding: 15px;
+}
+.recent .recentContainer h3 {
+  color: #ffd300;
+  text-transform: uppercase;
+}
+.recent .recentContainer .featured {
+  padding-bottom: 75px;
+}
+.recent .recentContainer .recentPost li {
+  list-style: disc;
+  margin-left: 20px;
 }
 
 .mainContact {
@@ -803,6 +898,12 @@ header .navBar li a:focus {
   padding-bottom: 20px;
   border: none;
 }
+.formContainer form fieldset .nameEmail .formName {
+  width: 90%;
+}
+.formContainer form fieldset .nameEmail .formEmail {
+  width: 90%;
+}
 .formContainer form fieldset .nameEmail label {
   display: none;
 }
@@ -820,6 +921,9 @@ header .navBar li a:focus {
   color: #fff;
   padding: 0.5rem 0 0.5rem 1rem;
   width: 100%;
+}
+.formContainer form fieldset .nameEmail input[type=text] {
+  color: #fff;
 }
 .formContainer form fieldset textarea {
   border: none;

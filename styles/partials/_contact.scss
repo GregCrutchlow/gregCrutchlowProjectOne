@@ -28,6 +28,12 @@
         width: auto;
         padding-bottom: 20px ;
         border: none;
+        .formName {
+          width: 90%;
+        }
+        .formEmail {
+          width: 90%;
+        }
         label {
           display: none;
         }
@@ -41,6 +47,9 @@
           color: $white;
           padding: 0.5rem 0 0.5rem 1rem;
           width: 100%;
+        }
+        input[type='text']{
+          color: $white;
         }
       }
       textarea {
