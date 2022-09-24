@@ -1,2 +1,189 @@
 @use 'variables' as *;
 
+@media (max-width: 1200px) {
+  .heroImage {
+    display: none;
+  }
+  .sectionOne {
+    padding-top: 50px;
+  }
+  .sectionTwo {
+    .articleOne {
+      flex-direction: column;
+      align-items: center;
+      .imageArticle {
+        width: 75%;
+        display: flex;
+        justify-content: center;
+      }
+    }
+    .articleTwo {
+      flex-direction: column;
+      align-items: center;
+      .imageArticle {
+        width: 75%;
+        display: flex;
+        justify-content: center;
+        margin-bottom: 0;
+      }
+      .articleContents {
+        padding-top: 130px;
+      }
+    }
+  }
+  .sectionSix {
+    justify-content: center;
+    max-width: 100%;
+  }
+  .pageContainer {
+    flex-direction: column;
+    align-items: center;
+      .blogImage1 {
+        display: none;
+      }
+      .blogContents {
+        .blogContainer {
+          border: none;
+          .commentAndFormContainer {
+            .commentContainer {
+              padding-bottom: 20px;
+            }
+          }
+        }
+      }
+      .recent {
+        margin-top: 50px;
+        display: flex;
+        justify-content: center;
+        padding-bottom: 50px;
+        .recentImg {
+          display: flex;
+          justify-content: center;
+          width: 100%;
+        }
+        .recentShadow {
+          display: none;
+        }
+        .recentContainer {
+          margin-left: auto;
+          margin-right: 50px;
+          height: auto;
+          .featured {
+            padding-bottom: 20px;
+          }
+        }
+      }
+    }
+}
+
+@media (max-width: 1024px) {
+  .spaces {
+    flex-direction: column;
+    align-items: center;
+    .spacesArticle {
+      justify-content: center;
+      padding-left: 0;
+      padding-top: 75px;
+    }
+  }
+
+    .contactFlex {
+    flex-direction: column;
+    .formContainer {
+      display: flex;
+      justify-content: center;
+    }
+    .contactInformation {
+      padding-top: 100px;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .pageContainer {
+    .blogContents {
+      .commentAndFormContainer {
+        margin: 0 0;
+        .commentContainer {
+          padding: 0;
+        }
+      }
+    }
+  }
+  .formContainerBlog form fieldset .nameEmail {
+    flex-direction: column;
+  }
+  .recent {
+    flex-direction: column;
+    .recentImg {
+      img {
+        display: none;
+      }
+    }
+    .recentContainer {
+      margin: 0 auto;
+    }
+  }
+  .sectionOne {
+    ul {
+      flex-direction: column;
+    }
+  }
+}
+
+@media (max-width: 480px) {
+  header h1 {
+    font-size: 3rem;
+  }
+  .sectionThree {
+    .promotionOffer {
+      padding: 50px 0;
+    }
+  }
+  .sectionFour {
+    background-position: center;
+    height: 50vh;
+  }
+  .sectionSix {
+    .image2 {
+      display: none;
+    }
+    .image3 {
+      display: none;
+    }
+  }
+  .blog {
+    background-position: center;
+  }
+  .pageContainer .blogContents .blogContainer {
+    padding: 20px 0;
+    h5 {
+      font-size: 1rem;
+    }
+  }
+  .pageContainer .blogContents .commentAndFormContainer .commentContainer .commentPost {
+    flex-direction: column;
+    .commentPostContent {
+      padding-left: 0;
+      padding-top: 20px;
+      h5 {
+        font-size: 0.9rem;
+      }
+    }
+  }
+  .formContainerBlog form {
+    padding: 0;
+  }
+  .pageContainer .recent .recentContainer {
+    width: 95%;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+  .nameEmail {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 360px) {
+
+}

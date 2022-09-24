@@ -539,6 +539,7 @@ header .navBar li a:focus {
       -ms-flex-direction: column;
           flex-direction: column;
   gap: 2rem;
+  background-color: #171b0e;
 }
 .sectionTwo .articleContents {
   display: -webkit-box;
@@ -659,6 +660,7 @@ header .navBar li a:focus {
 }
 
 .sectionSix {
+  background-color: #171b0e;
   padding: 100px;
 }
 .sectionSix ul {
@@ -674,7 +676,7 @@ header .navBar li a:focus {
   height: auto;
 }
 .sectionSix ul .gallery .galleryImg {
-  min-width: 120%;
+  max-width: 100%;
 }
 
 .pageContainer {
@@ -978,4 +980,228 @@ footer p a {
 }
 footer p a:hover {
   border-bottom: solid #ffd300;
+}
+
+@media (max-width: 1200px) {
+  .heroImage {
+    display: none;
+  }
+  .sectionOne {
+    padding-top: 50px;
+  }
+  .sectionTwo .articleOne {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .sectionTwo .articleOne .imageArticle {
+    width: 75%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .sectionTwo .articleTwo {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .sectionTwo .articleTwo .imageArticle {
+    width: 75%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-bottom: 0;
+  }
+  .sectionTwo .articleTwo .articleContents {
+    padding-top: 130px;
+  }
+  .sectionSix {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    max-width: 100%;
+  }
+  .pageContainer {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .pageContainer .blogImage1 {
+    display: none;
+  }
+  .pageContainer .blogContents .blogContainer {
+    border: none;
+  }
+  .pageContainer .blogContents .blogContainer .commentAndFormContainer .commentContainer {
+    padding-bottom: 20px;
+  }
+  .pageContainer .recent {
+    margin-top: 50px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    padding-bottom: 50px;
+  }
+  .pageContainer .recent .recentImg {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    width: 100%;
+  }
+  .pageContainer .recent .recentShadow {
+    display: none;
+  }
+  .pageContainer .recent .recentContainer {
+    margin-left: auto;
+    margin-right: 50px;
+    height: auto;
+  }
+  .pageContainer .recent .recentContainer .featured {
+    padding-bottom: 20px;
+  }
+}
+@media (max-width: 1024px) {
+  .spaces {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .spaces .spacesArticle {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    padding-left: 0;
+    padding-top: 75px;
+  }
+  .contactFlex {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .contactFlex .formContainer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .contactFlex .contactInformation {
+    padding-top: 100px;
+  }
+}
+@media (max-width: 768px) {
+  .pageContainer .blogContents .commentAndFormContainer {
+    margin: 0 0;
+  }
+  .pageContainer .blogContents .commentAndFormContainer .commentContainer {
+    padding: 0;
+  }
+  .formContainerBlog form fieldset .nameEmail {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .recent {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .recent .recentImg img {
+    display: none;
+  }
+  .recent .recentContainer {
+    margin: 0 auto;
+  }
+  .sectionOne ul {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+@media (max-width: 480px) {
+  header h1 {
+    font-size: 3rem;
+  }
+  .sectionThree .promotionOffer {
+    padding: 50px 0;
+  }
+  .sectionFour {
+    background-position: center;
+    height: 50vh;
+  }
+  .sectionSix .image2 {
+    display: none;
+  }
+  .sectionSix .image3 {
+    display: none;
+  }
+  .blog {
+    background-position: center;
+  }
+  .pageContainer .blogContents .blogContainer {
+    padding: 20px 0;
+  }
+  .pageContainer .blogContents .blogContainer h5 {
+    font-size: 1rem;
+  }
+  .pageContainer .blogContents .commentAndFormContainer .commentContainer .commentPost {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .pageContainer .blogContents .commentAndFormContainer .commentContainer .commentPost .commentPostContent {
+    padding-left: 0;
+    padding-top: 20px;
+  }
+  .pageContainer .blogContents .commentAndFormContainer .commentContainer .commentPost .commentPostContent h5 {
+    font-size: 0.9rem;
+  }
+  .formContainerBlog form {
+    padding: 0;
+  }
+  .pageContainer .recent .recentContainer {
+    width: 95%;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+  .nameEmail {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
 }

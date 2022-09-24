@@ -37,6 +37,7 @@
   display: flex;
   flex-direction: column;
   gap: 2rem;
+  background-color: $secondaryColour;
   .articleContents {
   display: flex;
   flex-direction: column;
@@ -117,6 +118,7 @@
   }
 
 .sectionSix {
+  background-color: $secondaryColour;
   padding: 100px;
   ul {
     display: flex;
@@ -125,7 +127,7 @@
       max-width: 100%;
       height: auto;
       .galleryImg {
-        min-width: 120%;
+        max-width: 100%;
       }
     }
   }
