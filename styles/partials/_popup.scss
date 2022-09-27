@@ -1,0 +1,9 @@
+@use "variables" as *;
+
+#hiddenPopUp {
+  display: none;
+  text-transform: uppercase;
+  color: $white;
+  height: 400px;
+  width: 600px;
+}
