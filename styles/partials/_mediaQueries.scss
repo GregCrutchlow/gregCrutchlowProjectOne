@@ -1,6 +1,13 @@
 @use 'variables' as *;
 
+@media (max-width: 5600px) {
+  .hiddenMenu {
+    display: none;
+  }
+}
+
 @media (max-width: 1200px) {
+  
   .heroImage {
     display: none;
   }
@@ -132,6 +139,7 @@
 }
 
 @media (max-width: 480px) {
+  
   header h1 {
     font-size: 3rem;
   }
@@ -185,5 +193,22 @@
 }
 
 @media (max-width: 360px) {
+  .hiddenMenu {
+    display: flex;
+  }
+  .menuButton.active {
+    display: block;
+  }
+  nav .navBar {
+    display: none;
+  }
+  header h1 {
+    margin: 0;
+    background-color: $secondaryColour;
+    padding-top: 3rem;
+    font-size: 2rem;
+    background-position: center;
+    background-size: contain;
+  }
 
 }

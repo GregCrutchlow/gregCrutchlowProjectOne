@@ -1,0 +1,44 @@
+@use "variables" as *;
+
+.hiddenMenu {
+  display: flex;
+  justify-content: space-between;
+  background-color: $secondaryColour;
+  height: 400px;
+  max-width: 360px;
+  min-width: 340px;
+  position: fixed;
+  top: 0;
+  left: -360px;
+  
+  li {
+    padding: 20px;
+  }
+}
+
+.menuButton {
+  background-color: $secondaryColour;
+  padding: 20px;
+  cursor: pointer;
+}
+
+.closeMenuButton {
+  position: fixed;
+  right: 0;
+  top: 0;
+}
+
+.showHiddenNav {
+  display: flex;
+  justify-content: space-between;
+  background-color: $secondaryColour;
+  height: 400px;
+  max-width: 360px;
+  min-width: 340px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  li {
+    padding: 20px;
+  }
+}
