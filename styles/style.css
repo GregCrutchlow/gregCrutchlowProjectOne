@@ -982,6 +982,61 @@ footer p a:hover {
   border-bottom: solid #ffd300;
 }
 
+.hiddenMenu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background-color: #171b0e;
+  height: 400px;
+  max-width: 360px;
+  min-width: 340px;
+  position: fixed;
+  top: 0;
+  left: -360px;
+}
+.hiddenMenu li {
+  padding: 20px;
+}
+
+.menuButton {
+  background-color: #171b0e;
+  padding: 20px;
+  cursor: pointer;
+}
+
+.closeMenuButton {
+  position: fixed;
+  right: 0;
+  top: 0;
+}
+
+.showHiddenNav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background-color: #171b0e;
+  height: 400px;
+  max-width: 360px;
+  min-width: 340px;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+.showHiddenNav li {
+  padding: 20px;
+}
+
+@media (max-width: 5600px) {
+  .hiddenMenu {
+    display: none;
+  }
+}
 @media (max-width: 1200px) {
   .heroImage {
     display: none;
@@ -1203,5 +1258,26 @@ footer p a:hover {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+  }
+}
+@media (max-width: 360px) {
+  .hiddenMenu {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .menuButton.active {
+    display: block;
+  }
+  nav .navBar {
+    display: none;
+  }
+  header h1 {
+    margin: 0;
+    background-color: #171b0e;
+    padding-top: 3rem;
+    font-size: 2rem;
+    background-position: center;
+    background-size: contain;
   }
 }
